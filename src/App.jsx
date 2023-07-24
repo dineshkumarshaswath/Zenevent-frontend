@@ -22,9 +22,7 @@ function App() {
 
   return (
 
-    // Use this password and email for check admindashboard
-    // email:classadmin@gmail.com,
-    // password:classadmin@
+    
 
     <Switch>
       <Route exact path="/">

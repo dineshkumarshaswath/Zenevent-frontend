@@ -35,6 +35,14 @@ Form{
 }
 
 
+ .card:hover{
+        margin-top: -5px;
+        box-shadow: 2px 2px 5px black;
+        transition: 2s ;
+          
+        }
+        
+
 
 
 /* *{

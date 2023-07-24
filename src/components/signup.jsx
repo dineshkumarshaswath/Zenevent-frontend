@@ -7,6 +7,7 @@ import Form from 'react-bootstrap/Form'
 import * as yup from 'yup'
 import { useFormik } from 'formik'
 import Navbar from 'react-bootstrap/Navbar';
+import zenimage from "../Images/zenclass.png"
 
 const singinSchema = yup.object({
    name: yup.string().required("* required").min(7, "Minimum Enter 7 characters"),
@@ -71,8 +72,7 @@ function Signup() {
 
                <Navbar.Brand href="/">
                   <img
-                     src="https://scontent.fsxv1-1.fna.fbcdn.net/v/t39.30808-6/225361532_226462172741430_8791264933502929167_n.png?_nc_cat=1&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=5ICAfIp-tL8AX86VWyj&_nc_ht=scontent.fsxv1-1.fna&oh=00_AfDlbRd2osSILfsjSWsQQyuDYkZbllwkKXZNtELA0n4tOg&oe=64AB8686"
-
+                     src={zenimage}
                      style={{ width: '60px', height: '40px', ObjectFit: 'contain', margin: "5px" }}
 
                      alt=" logo"
@@ -157,7 +157,7 @@ function Signup() {
                </Col> <Col style={{ color: 'crimson', textAlign: "center", width: '30%', margin: "1px" }}>
                   {touched.password ? errors.password : ""}</Col>
 
-                  {error ? <Col style={{ textAlign: "center", width: '30%', margin: "10px" }}
+               {error ? <Col style={{ textAlign: "center", width: '30%', margin: "10px" }}
                ><Form.Control style={{
                   Color: "crimson"
                   , fontWeight: "bold", textAlign: "center"
@@ -168,7 +168,7 @@ function Signup() {
                   <Button type='submit'>signup</Button>
                </Col>
 
-             
+
             </Form>
          </Row>
       </>

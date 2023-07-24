@@ -1,7 +1,7 @@
 import React from 'react'
 import Base from './base'
 import { useState } from 'react'
-import { Button, Row, Col, Container } from "react-bootstrap"
+import { Button, Row, Col, Container, Card } from "react-bootstrap"
 import { useHistory } from "react-router-dom"
 import Form from 'react-bootstrap/Form'
 import * as yup from 'yup'
@@ -11,6 +11,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import zenimage from "../Images/zenclass.png"
 
 const loginSchema = yup.object({
     email: yup.string().required("* required").min(10, 'minimum 10 characters required'),
@@ -79,8 +80,7 @@ function Login() {
 
                     <Navbar.Brand href="/">
                         <img
-                            src="https://scontent.fsxv1-1.fna.fbcdn.net/v/t39.30808-6/225361532_226462172741430_8791264933502929167_n.png?_nc_cat=1&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=5ICAfIp-tL8AX86VWyj&_nc_ht=scontent.fsxv1-1.fna&oh=00_AfDlbRd2osSILfsjSWsQQyuDYkZbllwkKXZNtELA0n4tOg&oe=64AB8686"
-
+                            src={zenimage}
                             style={{ width: '60px', height: '40px', ObjectFit: 'contain', margin: "5px" }}
 
                             alt=" logo"
@@ -147,6 +147,19 @@ function Login() {
                 <Col >Don't have account?<a href='/signin' >Sign in</a>
                 </Col>
             </Row>
+            <Row style={{ margin: '10px' }}><Col style={{ display: 'grid', placeItems: "center" }}>
+                <Card style={{ width: '18rem' }} className='card'>
+                    <Card.Body>
+                        <Card.Title style={{ color: "black" }}>  check admindashboard</Card.Title>
+                        <Card.Title style={{ textAlign: "center", color: "crimson" }}> Use this</Card.Title><hr />
+                        <Card.Text style={{ color: "brown" }}>Email:classadmin@gmail.com </Card.Text>
+                        <Card.Text style={{ color: "green" }}>Password:classadmin@ </Card.Text>
+
+
+                    </Card.Body>
+                </Card>
+            </Col></Row>
+
 
         </>
     )

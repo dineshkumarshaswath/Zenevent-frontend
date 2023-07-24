@@ -3,7 +3,7 @@ import { useHistory } from 'react-router-dom/cjs/react-router-dom.min'
 import Table from 'react-bootstrap/Table';
 import Navbar from 'react-bootstrap/Navbar'
 import { Row, Col, FormControl, Button, Form } from 'react-bootstrap'
-
+import  zenimage from "../Images/zenclass.png"
 
 
 
@@ -51,7 +51,7 @@ function Allattendance(){
               
               <Navbar.Brand href="/">
                 <img
-                  src="https://scontent.fsxv1-1.fna.fbcdn.net/v/t39.30808-6/225361532_226462172741430_8791264933502929167_n.png?_nc_cat=1&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=5ICAfIp-tL8AX86VWyj&_nc_ht=scontent.fsxv1-1.fna&oh=00_AfDlbRd2osSILfsjSWsQQyuDYkZbllwkKXZNtELA0n4tOg&oe=64AB8686"
+                  src={zenimage}
     
                  style={{width:'60px',height:'40px',ObjectFit:'contain' ,margin:"5px"}}
                 
