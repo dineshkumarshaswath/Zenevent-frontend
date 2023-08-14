@@ -89,11 +89,14 @@ function Signup() {
 
 
          <Row sm={1} md={1} lg={1}
-            style={{ textAlign: 'center', marginTop: "10px", }}>
+            style={{ textAlign: 'center', marginTop: "10px", width: "100%" }}>
+            <h2 style={{
+               marginTop: "20px", fontWeight: "bolder", textAlign: "center",
+            }}>Signup here</h2>
             <Form onSubmit={handleSubmit}
-               style={{ display: "grid", placeItems: "center", marginTop: "30px" }}
+               style={{ display: "grid", placeItems: "center", marginTop: "10px" }}
             >
-               <Col style={{ textAlign: "center", width: '30%' }} variant="success"  >
+               <Col style={{ textAlign: "center", width: '50%' }} variant="success"  >
                   <Form.Group className="mb-1" controlId="exampleForm.ControlTextarea1">
                      <Form.Label style={{ display: "flex", alignItmes: "start" }}>Name</Form.Label>
                      <Form.Control type="text" placeholder="Your name" style={{
@@ -110,7 +113,7 @@ function Signup() {
                <Col style={{ color: 'crimson', textAlign: "center", width: '30%', margin: "1px" }}>
                   {touched.name ? errors.name : ""}</Col>
 
-               <Col style={{ textAlign: "center", width: '30%' }} variant="success" >
+               <Col style={{ textAlign: "center", width: '50%' }} variant="success" >
                   <Form.Group className="mb-1" controlId="exampleForm.ControlTextarea1">
                      <Form.Label style={{ display: "flex", alignItmes: "start" }}>Email</Form.Label>
                      <Form.Control type="email" placeholder="Example:john@gmail.com" style={{
@@ -127,7 +130,7 @@ function Signup() {
                <Col style={{ color: 'crimson', textAlign: "center", width: '30%', margin: "1px", }}>
                   {touched.email ? errors.email : ""}</Col>
 
-               <Col style={{ textAlign: "center", width: '30%' }} variant="success" >
+               <Col style={{ textAlign: "center", width: '50%' }} variant="success" >
                   <Form.Group className="mb-1" controlId="exampleForm.ControlTextarea1">
                      <Form.Label style={{ display: "flex", alignItmes: "start" }}>Contact</Form.Label>
                      <Form.Control type="number" placeholder="Enter phone No"
@@ -143,7 +146,7 @@ function Signup() {
                <Col style={{ color: 'crimson', textAlign: "center", width: '30%', margin: "1px" }}>
                   {touched.contact ? errors.contact : ""}</Col>
 
-               <Col style={{ textAlign: "center", width: '30%' }} variant="success"  >
+               <Col style={{ textAlign: "center", width: '50%' }} variant="success"  >
                   <Form.Group className="mb-1" controlId="exampleForm.ControlTextarea1">
                      <Form.Label style={{ display: "flex", alignItmes: "start" }}>Password</Form.Label>
                      <Form.Control type="password" placeholder="Password"

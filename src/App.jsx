@@ -13,6 +13,8 @@ import Registerstdudent from './components/registerattendance';
 //import Sample from './components/studentclass';
 import Studentclass from './components/studentclass';
 import Allattendance from './components/getattendance';
+import Forgotpassword from './components/forgotpass';
+import Resetpassword from './components/resetpass';
 
 function App() {
 
@@ -22,7 +24,7 @@ function App() {
 
   return (
 
-    
+
 
     <Switch>
       <Route exact path="/">
@@ -31,6 +33,14 @@ function App() {
 
       <Route path='/signin'>
         <Signup />
+      </Route>
+
+      <Route path="/forgot">
+        <Forgotpassword />
+      </Route>
+
+      <Route path="/reset/password/:token">
+        <Resetpassword />
       </Route>
 
       <Route path="/class">
@@ -63,7 +73,7 @@ function App() {
       </Route>
 
 
-     
+
 
     </Switch>
 
